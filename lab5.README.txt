@@ -5,4 +5,5 @@ process listed on your slides.  I put the primitive on the GPU, I declared the p
 and the shadow map itself.  Then I computed both modelview matrices, one for the original primitive, and then the other for the
 shadow.  The two pass method is where I think that I was struggling.  I set the position for each modelview matrix, and then in
 the vertex shader, I set its position.  In the fragment shader, I originally tried to implement the process of shading each pixel
-based on its depth relative to the light and primitive shape, but this did not work.
+based on its depth relative to the light and primitive shape, but this did not work.  My code is commented out in both other 
+files.
