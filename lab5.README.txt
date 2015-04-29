@@ -1,3 +1,8 @@
 Michael Zbytniewski, Lab5.  This lab uses code from my lab 3.  In my lab 3, the light did not properly work.  It turned the
 entire shape purple, and this light color can be altered by changing values in the initialization of the light source.  
-The shadow mapping for this lab was unsuccessful, despite many attempts.  
+The shadow mapping for this lab was unsuccessful, despite many attempts.  I tried adding the shadow map according to the proper
+process listed on your slides.  I put the primitive on the GPU, I declared the position, color, mvpmatrix, mvpmatrixfromlight,
+and the shadow map itself.  Then I computed both modelview matrices, one for the original primitive, and then the other for the
+shadow.  The two pass method is where I think that I was struggling.  I set the position for each modelview matrix, and then in
+the vertex shader, I set its position.  In the fragment shader, I originally tried to implement the process of shading each pixel
+based on its depth relative to the light and primitive shape, but this did not work.
